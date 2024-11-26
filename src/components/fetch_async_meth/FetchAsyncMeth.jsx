@@ -15,7 +15,7 @@ export default function FetchAsyncMeth() {
                     // Menangani status HTTP selain 200-299
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
-                return response.json(); // Mengubah response menjadi JSON
+                return response.json(); // Mengubah response menjadi JSON(mengembalikan response(return))
             })
             .then(data => {
                 setData(data); // Menyimpan data ke state
